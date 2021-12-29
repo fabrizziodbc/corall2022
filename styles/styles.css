@@ -1,0 +1,19 @@
+:root {
+  --color-main: #a31523;
+  --color-secondary: #524437;
+  --color-aux: #f2d47b;
+  --color-bg: #ffffff;
+  --color-bg-aux: #dad0bf;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+/*# sourceMappingURL=styles.css.map */
