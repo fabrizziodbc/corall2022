@@ -1,5 +1,5 @@
 :root {
-  --color-aux: rgba(240, 217, 148, 0.829);
+  --color-aux: rgba(255, 243, 206, 0.829);
   --color-bg-aux: #dad0bf;
   --color-bg: #ffffff;
   --color-main: #a31523;
@@ -18,6 +18,45 @@ html {
   scroll-behavior: smooth;
 }
 
+.language-bar {
+  display: none;
+  padding-right: 24px;
+  width: 100%;
+  height: 60px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.language-bar__flags {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.language-bar__eng {
+  width: 40px;
+  height: 20px;
+  display: block;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url(https://www.countryflags.com/wp-content/uploads/united-states-of-america-flag-png-large.png);
+}
+
+.language-bar__esp {
+  width: 40px;
+  height: 20px;
+  display: block;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url(https://www.countryflags.com/wp-content/uploads/spain-flag-png-large.png);
+}
+
 .header {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -34,7 +73,8 @@ html {
       -ms-flex-pack: start;
           justify-content: start;
   padding: 8px 16px;
-  position: fixed;
+  position: -webkit-sticky;
+  position: sticky;
   top: 0;
   width: 100%;
   z-index: 9;
@@ -62,6 +102,13 @@ html {
 }
 
 .header__menu-mobile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   background-color: var(--color-bg);
   height: calc(100vh - 72px);
   position: absolute;
@@ -84,7 +131,7 @@ html {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 100%;
+  height: 60%;
   margin: 0;
   padding: 0 0 0 16px;
   width: 100%;
@@ -130,9 +177,12 @@ html {
   color: var(--color-bg);
 }
 
+.header__menu-mobile .language-bar__flags {
+  padding-left: 32px;
+}
+
 .carrousel {
   height: calc(100vh - 72px);
-  margin-top: 72px;
   width: 100%;
 }
 
@@ -536,7 +586,6 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: var(--color-main);
 }
 
 .footer__social .footer__linkedin span {
@@ -551,9 +600,13 @@ html {
 }
 
 .footer__logo {
-  background: none;
-  color: white;
-  font-size: 3.6rem;
+  /*    background: none;
+    color: white;
+    font-size: 3.6rem; */
+  width: 180px;
+  height: 90px;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .footer__main {
@@ -567,9 +620,9 @@ html {
       -ms-flex-pack: center;
           justify-content: center;
   min-height: 60px;
-  background-color: var(--color-secondary);
-  color: var(--color-bg-aux);
-  font-size: 1.4rem;
+  background-color: var(--color-main);
+  color: var(--color-bg);
+  font-size: 1.6rem;
 }
 
 @-webkit-keyframes logo-scroll {
@@ -685,6 +738,12 @@ html {
 }
 
 @media (min-width: 600px) {
+  .language-bar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-right: 24px;
+  }
   .carrousel__content {
     height: 600px;
     right: calc(50% - (500px / 2));
