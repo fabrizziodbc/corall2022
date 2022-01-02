@@ -1,5 +1,5 @@
 :root {
-  --color-aux: #f2d47b;
+  --color-aux: rgba(240, 217, 148, 0.829);
   --color-bg-aux: #dad0bf;
   --color-bg: #ffffff;
   --color-main: #a31523;
@@ -317,6 +317,7 @@ html {
     grid-template-rows: 250px 80px;
     justify-items: center;
     align-items: center;
+    margin-bottom: 16px;
   }
   &__img {
     max-width: 288px;
@@ -324,6 +325,41 @@ html {
     //max-height: 240px;
     object-fit: contain;
     margin-bottom: 16px;
+  }
+}
+.contact{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 16px;
+  min-height: 80vh;
+  padding: 0 16px;
+  width: 100%;
+  &__title {
+    text-align: center;
+    font-size: 2.6rem;
+    font-weight: bold;
+    margin: 20px 0;
+  }
+  &__form{
+    display: grid;
+    
+    gap: 16px;
+    input, textarea{
+      font-size: 1.4rem;
+      padding: 16px;
+      background-color: var(--color-aux);
+      border: none;
+    }
+    input, textarea::placeholder{
+      font-weight: bold;
+    }
+    textarea{
+      min-height: 140px;
+    }
+    button{
+      width: 100%;
+    }
   }
 }
 @keyframes logo-scroll {
@@ -438,26 +474,6 @@ html {
       width: 100%;
     }
   }
-  .solutions {
-    grid-gap: 32px;
-    &__grid {
-      grid-template-columns: 1fr 1fr 1fr;
-
-    }
-    button {
-      width: 280px;
-    }
-    .solutions__item:last-child {
-      grid-column: 3;
-    }
-    &__grid-2 {
-      grid-template-columns: 1fr 1fr;
-      padding: 0 162px;
-      .solutions__item:last-child {
-        grid-column: 2;
-      }
-    }
-  }
 }
 
 @media (min-width: 768px) {
@@ -530,6 +546,39 @@ html {
       width: 50%;
     }
   }
+  .solutions {
+    padding: 8px 82px;
+    grid-gap: 16px;
+    &__grid {
+      grid-template-columns: 1fr 1fr;
+
+    }
+    button {
+      width: 280px;
+    }
+    .solutions__item:last-child {
+      grid-column: 1 / 3;
+    }
+    &__grid-2 {
+      grid-template-columns: 1fr 1fr;
+      padding: 0 162px;
+      .solutions__item:last-child {
+        grid-column: 2;
+      }
+    }
+  }
+  .contact{
+    padding: 8px 82px;
+    &__form{
+      grid-template-columns: 1fr 1fr;
+    }
+    input:first-child{
+      grid-column: 1 / 3;
+    }
+    textarea{
+      grid-column: 1 / 3;
+    }
+  }
 }
 
 @media (min-width: 880px) {
@@ -539,5 +588,17 @@ html {
   }
   .clients {
     padding: 16px 82px;
+  }
+  .contact{
+    padding: 8px 82px;
+    &__form{
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+    input:first-child{
+      grid-column: 1;
+    }
+    textarea{
+      grid-column: 1 / 4;
+    }
   }
 }

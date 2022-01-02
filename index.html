@@ -12,6 +12,12 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./styles/styles.css" />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("user_uVPa1t7UTgJN9JUbKQhGE");
+      })();
+    </script>
     <title>Corall Development and Research</title>
   </head>
   <body>
@@ -24,7 +30,7 @@
           <li><a href="#about" class="drop-list__item">Conócenos</a></li>
           <li><a href="#solutions" class="drop-list__item">Soluciones</a></li>
           <li><a href="#" class="drop-list__item">Asesorias</a></li>
-          <li><a href="#" class="drop-list__item">Contáctanos</a></li>
+          <li><a href="#contacto" class="drop-list__item">Contáctanos</a></li>
         </ul>
       </div>
       <div class="header__menu-desktop">
@@ -33,7 +39,7 @@
           <li><a href="#about" class="nav-bar__item">Conócenos</a></li>
           <li><a href="#solutions" class="nav-bar__item">Soluciones</a></li>
           <li><a href="#" class="nav-bar__item">Asesorias</a></li>
-          <li><a href="#" class="nav-bar__item">Contáctanos</a></li>
+          <li><a href="#contacto" class="nav-bar__item">Contáctanos</a></li>
         </ul>
       </div>
     </header>
@@ -294,6 +300,64 @@
             </div>
           </div>
         </div>
+      </div>
+      <div class="contact" id="contacto">
+        <p class="contact__title">Contáctanos</p>
+        <form action="" class="contact__form" id="myForm">
+          <input
+            type="text"
+            placeholder="Tu Nombre"
+            name="name"
+            id="name"
+            required
+            oninvalid="this.setCustomValidity('Por favor, ingresa un nombre válido')"
+            oninput="this.setCustomValidity('')"
+          />
+          <input
+            type="email"
+            placeholder="Correo Electrónico"
+            name="correo"
+            id="correo"
+            required
+            oninvalid="this.setCustomValidity('Por favor, ingresa un correo electrónico válido')"
+            oninput="this.setCustomValidity('')"
+          />
+          <input
+            type="tel"
+            placeholder="Celular"
+            name="celular"
+            id="celular"
+            required
+            pattern="[9]{1}[0-9]{8}"
+            oninvalid="this.setCustomValidity('Por favor, ingresa un número de teléfono válido')"
+            oninput="this.setCustomValidity('')"
+          />
+          <!-- <input
+            type="text"
+            placeholder="Tu Mensaje"
+            name="message"
+            id="message"
+            required
+            oninvalid="this.setCustomValidity('Por favor, ingresa tu mensaje')"
+            oninput="this.setCustomValidity('')"
+          /> -->
+          <textarea
+            type="text"
+            placeholder="Tu Mensaje"
+            name="message"
+            id="message"
+            required
+            oninvalid="this.setCustomValidity('Por favor, ingresa tu mensaje')"
+            oninput="this.setCustomValidity('')"
+          ></textarea>
+          <button
+            type="submit"
+            class="btn btn-primary main-button"
+            id="contact__button"
+          >
+            Envíar
+          </button>
+        </form>
       </div>
       <a
         href="https://api.whatsapp.com/send/?phone=51970510173&text=Deseo%20agendar%20una%20cita&app_absent=0"
