@@ -4,6 +4,8 @@
   --color-bg: #ffffff;
   --color-main: #a31523;
   --color-secondary: #524437;
+
+  --font-family: 'Poppins', sans-serif;
 }
 * {
   box-sizing: border-box;
@@ -13,6 +15,9 @@
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
+}
+body {
+  font-family: var(--font-family);
 }
 .language-bar {
   display: none;
@@ -310,7 +315,7 @@ html {
       animation-duration: 30s;
       animation-iteration-count: infinite;
     }
-    .logo-slide-track{
+    .logo-slide-track {
       display: flex;
       justify-content: center;
       align-items: center;
@@ -322,7 +327,7 @@ html {
       height: 100%;
       width: 250px;
       padding: 20px;
-      img{
+      img {
         height: 170px;
         max-width: 180px;
         object-fit: contain;

@@ -4,6 +4,7 @@
   --color-bg: #ffffff;
   --color-main: #a31523;
   --color-secondary: #524437;
+  --font-family: 'Poppins', sans-serif;
 }
 
 * {
@@ -16,6 +17,10 @@
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-family);
 }
 
 .language-bar {
