@@ -768,6 +768,9 @@ body {
     display: flex;
     padding-right: 24px;
   }
+  .carrousel .fa-users-cog, .carrousel .fa-rocket, .carrousel .fa-comments {
+    color: var(--color-bg);
+  }
   .carrousel__content {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -775,14 +778,14 @@ body {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
-    height: 600px;
-    right: calc(65% - (500px / 2));
+    height: 700px;
+    right: calc(60% - (500px / 2));
     top: calc(50% - (600px / 2));
     width: 560px;
   }
   .carrousel__text {
     color: var(--color-bg);
-    font-size: 3.8rem;
+    font-size: 3.6rem;
     font-weight: bold;
     text-align: left;
   }

@@ -537,23 +537,24 @@ body {
     padding-right: 24px;
   }
   .carrousel {
+    .fa-users-cog, .fa-rocket, .fa-comments {
+      color: var(--color-bg);
+    }
     &__content {
       display: flex;
       align-items: flex-start;
-      height: 600px;
-      right: calc(65% - (500px / 2));
+      height: 700px;
+      right: calc(60% - (500px / 2));
       top: calc(50% - (600px / 2));
       width: 560px;
-  
     }
     &__text {
       color: var(--color-bg);
-      font-size: 3.8rem;
+      font-size: 3.6rem;
       font-weight: bold;
       text-align: left;
     }
     &__button {
-    
       border-color: var(--color-bg);
       color: var(--color-bg);
       font-size: 2rem;
