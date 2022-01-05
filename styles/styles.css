@@ -421,10 +421,38 @@ html {
           animation-iteration-count: infinite;
 }
 
+.clients__carousel .logo-slide-track {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .clients__carousel .logo-slider .slide {
-  height: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
   width: 250px;
   padding: 20px;
+}
+
+.clients__carousel .logo-slider .slide img {
+  height: 170px;
+  max-width: 180px;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .solutions {
@@ -610,6 +638,8 @@ html {
 }
 
 .footer__main {
+  text-align: center;
+  padding: 0 32px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
