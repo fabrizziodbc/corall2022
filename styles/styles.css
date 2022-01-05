@@ -257,9 +257,14 @@ body {
 }
 
 .about__text-h1 {
-  font-size: 2.2rem;
-  font-weight: bold;
+  color: var(--color-main);
+  font-size: 4rem;
+  font-weight: 500;
   margin-bottom: 16px;
+}
+
+.about__text-h1 span {
+  font-weight: 800;
 }
 
 .about__img {
@@ -279,7 +284,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: var(--color-bg-aux);
+  /* background-color: var(--color-bg-aux); */
   color: var(--color-main);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -297,10 +302,26 @@ body {
   width: 100%;
 }
 
+.how__h2 {
+  color: var(--color-main);
+  font-size: 4rem;
+  font-weight: 500;
+  margin-bottom: 16px;
+  font-weight: 800;
+}
+
+.how__subtitle {
+  color: black;
+  font-size: 1.8rem;
+  font-weight: 300;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
 .how__title {
   font-size: 2.6rem;
   font-weight: bold;
-  margin-bottom: 16px;
+  margin-bottom: 32px;
 }
 
 .how__grid {
@@ -315,7 +336,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border: solid 1px var(--color-bg);
+  border: solid 1px var(--color-bg-aux);
   -webkit-box-shadow: 0px 8px 15px rgba(184, 184, 184, 0.5);
           box-shadow: 0px 8px 15px rgba(184, 184, 184, 0.5);
   display: -webkit-box;
@@ -374,10 +395,15 @@ body {
 }
 
 .clients__title {
-  text-align: center;
-  font-size: 2.6rem;
-  font-weight: bold;
+  color: var(--color-main);
+  font-size: 4rem;
+  font-weight: 500;
   margin-bottom: 16px;
+  text-align: center;
+}
+
+.clients__title span {
+  font-weight: 800;
 }
 
 .clients__carousel .logo-slider {
@@ -478,10 +504,16 @@ body {
 }
 
 .solutions__title {
-  text-align: center;
-  font-size: 2.6rem;
-  font-weight: bold;
+  color: var(--color-main);
+  font-size: 4rem;
+  font-weight: 500;
   margin: 20px 0;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.solutions__title span {
+  font-weight: 800;
 }
 
 .solutions__grid {
@@ -768,7 +800,9 @@ body {
     display: flex;
     padding-right: 24px;
   }
-  .carrousel .fa-users-cog, .carrousel .fa-rocket, .carrousel .fa-comments {
+  .carrousel .fa-users-cog,
+  .carrousel .fa-rocket,
+  .carrousel .fa-comments {
     color: var(--color-bg);
   }
   .carrousel__content {
@@ -810,6 +844,9 @@ body {
 }
 
 @media (min-width: 768px) {
+  hr {
+    margin: 0 82px;
+  }
   .header {
     padding: 8px 22px;
     -webkit-box-pack: center;
@@ -870,12 +907,12 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    gap: 32px;
+    gap: 48px;
     margin: 42px 0;
-    padding: 8px 82px;
+    padding: 8px 160px;
   }
   .about__content {
-    width: 50%;
+    width: 40%;
   }
   .about__text {
     font-size: 1.6rem;
@@ -883,11 +920,6 @@ body {
     line-height: 1.5;
     margin-bottom: 16px;
     text-align: left;
-  }
-  .about__text-h1 {
-    font-size: 2.2rem;
-    font-weight: bold;
-    margin-bottom: 16px;
   }
   .about button {
     width: 280px;

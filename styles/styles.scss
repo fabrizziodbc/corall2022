@@ -178,9 +178,13 @@ body {
     text-align: left;
   }
   &__text-h1 {
-    font-size: 2.2rem;
-    font-weight: bold;
+    color: var(--color-main);
+    font-size: 4rem;
+    font-weight: 500;
     margin-bottom: 16px;
+    span {
+      font-weight: 800;
+    }
   }
   &__img {
     max-height: 260px;
@@ -195,7 +199,7 @@ body {
 }
 .how {
   align-items: center;
-  background-color: var(--color-bg-aux);
+  /* background-color: var(--color-bg-aux); */
   color: var(--color-main);
   display: flex;
   flex-direction: column;
@@ -204,10 +208,24 @@ body {
   min-height: 50vh;
   padding: 16px 16px;
   width: 100%;
+  &__h2 {
+    color: var(--color-main);
+    font-size: 4rem;
+    font-weight: 500;
+    margin-bottom: 16px;
+    font-weight: 800;
+  }
+  &__subtitle {
+    color: black;
+    font-size: 1.8rem;
+    font-weight: 300;
+    margin-bottom: 16px;
+    text-align: center;
+  }
   &__title {
     font-size: 2.6rem;
     font-weight: bold;
-    margin-bottom: 16px;
+    margin-bottom: 32px;
   }
   &__grid {
     display: grid;
@@ -217,7 +235,7 @@ body {
   }
   &__item {
     align-items: center;
-    border: solid 1px var(--color-bg);
+    border: solid 1px var(--color-bg-aux);
     box-shadow: 0px 8px 15px rgba(184, 184, 184, 0.5);
     display: flex;
     flex-direction: column;
@@ -256,10 +274,14 @@ body {
   padding: 16px 16px;
   width: 100%;
   &__title {
-    text-align: center;
-    font-size: 2.6rem;
-    font-weight: bold;
+    color: var(--color-main);
+    font-size: 4rem;
+    font-weight: 500;
     margin-bottom: 16px;
+    span {
+      font-weight: 800;
+    }
+    text-align: center;
   }
   &__carousel {
     .logo-slider {
@@ -344,10 +366,16 @@ body {
   padding: 0 16px;
   width: 100%;
   &__title {
-    text-align: center;
-    font-size: 2.6rem;
-    font-weight: bold;
+    color: var(--color-main);
+    font-size: 4rem;
+    font-weight: 500;
     margin: 20px 0;
+    margin-bottom: 16px;
+    span {
+      font-weight: 800;
+    }
+    text-align: center;
+    
   }
   &__grid {
     display: grid;
@@ -537,7 +565,9 @@ body {
     padding-right: 24px;
   }
   .carrousel {
-    .fa-users-cog, .fa-rocket, .fa-comments {
+    .fa-users-cog,
+    .fa-rocket,
+    .fa-comments {
       color: var(--color-bg);
     }
     &__content {
@@ -574,6 +604,7 @@ body {
 }
 
 @media (min-width: 768px) {
+  hr{ margin: 0 82px;}
   .header {
     padding: 8px 22px;
     justify-content: center;
@@ -615,11 +646,11 @@ body {
   .about {
     display: flex;
     flex-direction: row;
-    gap: 32px;
+    gap: 48px;
     margin: 42px 0;
-    padding: 8px 82px;
+    padding: 8px 160px;
     &__content {
-      width: 50%;
+      width: 40%;
     }
     &__text {
       font-size: 1.6rem;
@@ -627,11 +658,6 @@ body {
       line-height: 1.5;
       margin-bottom: 16px;
       text-align: left;
-    }
-    &__text-h1 {
-      font-size: 2.2rem;
-      font-weight: bold;
-      margin-bottom: 16px;
     }
     button {
       width: 280px;
