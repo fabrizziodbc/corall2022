@@ -696,6 +696,44 @@ body {
   width: 100%;
 }
 
+.footer__contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 12px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__contact .contact__item {
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  text-align: center;
+  width: 100%;
+}
+
+.footer__contact .contact__item-title {
+  /*  color: var(--color-main); */
+  font-weight: 700;
+  font-size: 1.6rem;
+  margin-bottom: 0;
+}
+
+.footer__contact .contact__item-description {
+  font-size: 1.4rem;
+}
+
 .footer__social {
   padding: 0 16px;
   border-top: solid 1px var(--color-secondary);
@@ -894,6 +932,47 @@ body {
     font-size: 2rem;
     height: 50px;
     width: 80%;
+  }
+  .footer__contact {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 12px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 16px;
+  }
+  .footer__contact .contact__item {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    justify-items: center;
+    -ms-grid-columns: 64px 180px;
+        grid-template-columns: 64px 180px;
+    text-align: center;
+    width: 100%;
+  }
+  .footer__contact .contact__item-title {
+    /*  color: var(--color-main); */
+    font-weight: 700;
+    font-size: 1.6rem;
+    margin-bottom: 0;
+  }
+  .footer__contact .contact__item-description {
+    font-size: 1.4rem;
   }
 }
 
