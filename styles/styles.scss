@@ -725,11 +725,11 @@ body {
       width: 280px;
     }
     &__img {
-      max-height: 360px;
       min-height: 190px;
+      max-height: 360px;
       object-fit: contain;
       width: 50%;
-      max-width: 214px;
+      max-width: 360px;
     }
   }
   .how {

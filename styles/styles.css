@@ -1009,12 +1009,12 @@ body {
     width: 280px;
   }
   .about__img {
-    max-height: 360px;
     min-height: 190px;
+    max-height: 360px;
     -o-object-fit: contain;
        object-fit: contain;
     width: 50%;
-    max-width: 214px;
+    max-width: 360px;
   }
   .how {
     padding: 72px 82px;
