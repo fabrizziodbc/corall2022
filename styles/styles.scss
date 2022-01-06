@@ -436,6 +436,12 @@ body {
     margin-bottom: 16px;
     font-weight: 800;
   }
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
   &__form {
     display: grid;
     gap: 16px;
@@ -456,6 +462,15 @@ body {
     button {
       width: 100%;
     }
+  }
+  //map
+  #map {
+    height: 400px;
+    /* The height is 400 pixels */
+    width: 100%;
+    /* The width is the width of the web page */
+    border: solid 1px black;
+    margin: 16px 0;
   }
 }
 .footer {
@@ -690,6 +705,20 @@ body {
   }
   .contact {
     padding: 8px 82px;
+    &__container {
+      flex-direction: row;
+      justify-content: center;
+      gap: 32px;
+    }
+    &__form{
+      width: 360px;
+    }
+    #map {
+      height: 413px;
+      width: 413px;
+      border: solid 1px black;
+      margin: 16px 0;
+    }
   }
   .footer {
     &__social {

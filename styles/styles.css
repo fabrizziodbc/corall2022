@@ -607,6 +607,22 @@ body {
   font-weight: 800;
 }
 
+.contact__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .contact__form {
   display: -ms-grid;
   display: grid;
@@ -647,6 +663,15 @@ body {
 
 .contact__form button {
   width: 100%;
+}
+
+.contact #map {
+  height: 400px;
+  /* The height is 400 pixels */
+  width: 100%;
+  /* The width is the width of the web page */
+  border: solid 1px black;
+  margin: 16px 0;
 }
 
 .footer {
@@ -964,6 +989,25 @@ body {
   }
   .contact {
     padding: 8px 82px;
+  }
+  .contact__container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 32px;
+  }
+  .contact__form {
+    width: 360px;
+  }
+  .contact #map {
+    height: 413px;
+    width: 413px;
+    border: solid 1px black;
+    margin: 16px 0;
   }
   .footer__social {
     padding: 8px 82px;

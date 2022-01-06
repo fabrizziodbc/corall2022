@@ -30,3 +30,19 @@ addEventListener('DOMContentLoaded', () => {
   });
   form.addEventListener("submit", sendForm);
 });
+
+// Initialize and add the map
+function initMap() {
+  // The location of Uluru
+  const uluru = { lat: -8.0929367, lng: -79.0131982 };
+  // The map, centered at Uluru
+  const map = new google.maps.Map(document.getElementById("map"), {
+    zoom: 15,
+    center: uluru,
+  });
+  // The marker, positioned at Uluru
+  const marker = new google.maps.Marker({
+    position: uluru,
+    map: map,
+  });
+}
