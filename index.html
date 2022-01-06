@@ -42,7 +42,7 @@
     </div>
     <header class="header">
       <span class="header__hamburguer">&equiv;</span>
-      <span class="header__logo"></span>
+      <a href="#" class="header__logo"></a>
       <div class="header__menu-mobile">
         <ul class="drop-list">
           <li><a href="#carrousel" class="drop-list__item">Inicio</a></li>
@@ -96,9 +96,11 @@
                   Creamos hardware y aplicaciones web para monitorear tus
                   procesos en tiempo real.
                 </p>
-                <button class="btn btn-outline-primary main-button-outline">
-                  Conócenos
-                </button>
+                <a href="#about" class="button__href">
+                  <button class="btn btn-outline-primary main-button-outline">
+                    Conócenos
+                  </button></a
+                >
               </div>
             </div>
             <div class="carousel-item">
@@ -113,9 +115,11 @@
                   Usamos algoritmos IA para identificación, conteo y control de
                   patrones.
                 </p>
-                <button class="btn btn-outline-primary main-button-outline">
-                  Ver soluciones
-                </button>
+                <a href="#solutions" class="button__href">
+                  <button class="btn btn-outline-primary main-button-outline">
+                    Ver soluciones
+                  </button>
+                </a>
               </div>
             </div>
             <div class="carousel-item">
@@ -129,9 +133,11 @@
                 <p class="carrousel__text">
                   Te escuchamos para hacer realidad tu proyecto tecnológico.
                 </p>
-                <button class="btn btn-outline-primary main-button-outline">
-                  Asesorias
-                </button>
+                <a href="#advisory" class="button__href">
+                  <button class="btn btn-outline-primary main-button-outline">
+                    Asesorias
+                  </button>
+                </a>
               </div>
             </div>
           </div>
@@ -174,7 +180,9 @@
               brindando predicciones para una mejor toma de decisiones.</strong
             >
           </h2>
-          <button class="btn btn-primary main-button">Contáctanos</button>
+          <a href="#contacto" class="button__href"
+            ><button class="btn btn-primary main-button">Contáctanos</button></a
+          >
         </div>
         <img
           src="./assets/team-corall.jpeg"
@@ -285,7 +293,15 @@
                 alt="Logo Mooti"
                 class="solutions__img"
               />
-              <button class="btn btn-primary main-button">Ver solución</button>
+              <a
+                href="https://mooti.tech/"
+                target="_blank"
+                class="button__href"
+              >
+                <button class="btn btn-primary main-button">
+                  Ver solución
+                </button></a
+              >
             </div>
             <div class="solutions__item">
               <img
@@ -315,7 +331,15 @@
                 alt="Logo DO"
                 class="solutions__img"
               />
-              <button class="btn btn-primary main-button">Ver solución</button>
+              <a
+                href="https://www.instagram.com/do_impresiones3d/"
+                target="_blank"
+                class="button__href"
+              >
+                <button class="btn btn-primary main-button">
+                  Ver solución
+                </button></a
+              >
             </div>
             <div class="solutions__item">
               <img
@@ -323,7 +347,15 @@
                 alt="Logo WashSense"
                 class="solutions__img"
               />
-              <button class="btn btn-primary main-button">Ver solución</button>
+              <a
+                href="https://www.instagram.com/washsense/"
+                target="_blank"
+                class="button__href"
+              >
+                <button class="btn btn-primary main-button">
+                  Ver solución
+                </button></a
+              >
             </div>
           </div>
         </div>
@@ -396,54 +428,54 @@
       <div class="contact" id="contacto">
         <p class="contact__title">Contáctanos</p>
         <div class="contact__container">
-        <form action="" class="contact__form" id="myForm">
-          <input
-            type="text"
-            placeholder="Tu Nombre"
-            name="name"
-            id="name"
-            required
-            oninvalid="this.setCustomValidity('Por favor, ingresa un nombre válido')"
-            oninput="this.setCustomValidity('')"
-          />
-          <input
-            type="email"
-            placeholder="Correo Electrónico"
-            name="correo"
-            id="correo"
-            required
-            oninvalid="this.setCustomValidity('Por favor, ingresa un correo electrónico válido')"
-            oninput="this.setCustomValidity('')"
-          />
-          <input
-            type="tel"
-            placeholder="Celular"
-            name="celular"
-            id="celular"
-            required
-            pattern="[9]{1}[0-9]{8}"
-            oninvalid="this.setCustomValidity('Por favor, ingresa un número de teléfono válido')"
-            oninput="this.setCustomValidity('')"
-          />
-          <textarea
-            type="text"
-            placeholder="Tu Mensaje"
-            name="message"
-            id="message"
-            required
-            oninvalid="this.setCustomValidity('Por favor, ingresa tu mensaje')"
-            oninput="this.setCustomValidity('')"
-          ></textarea>
-          <button
-            type="submit"
-            class="btn btn-primary main-button"
-            id="contact__button"
-          >
-            Envíar
-          </button>
-        </form>
-        <div class="contact__map" id="map"></div>
-      </div>
+          <form action="" class="contact__form" id="myForm">
+            <input
+              type="text"
+              placeholder="Tu Nombre"
+              name="name"
+              id="name"
+              required
+              oninvalid="this.setCustomValidity('Por favor, ingresa un nombre válido')"
+              oninput="this.setCustomValidity('')"
+            />
+            <input
+              type="email"
+              placeholder="Correo Electrónico"
+              name="correo"
+              id="correo"
+              required
+              oninvalid="this.setCustomValidity('Por favor, ingresa un correo electrónico válido')"
+              oninput="this.setCustomValidity('')"
+            />
+            <input
+              type="tel"
+              placeholder="Celular"
+              name="celular"
+              id="celular"
+              required
+              pattern="[9]{1}[0-9]{8}"
+              oninvalid="this.setCustomValidity('Por favor, ingresa un número de teléfono válido')"
+              oninput="this.setCustomValidity('')"
+            />
+            <textarea
+              type="text"
+              placeholder="Tu Mensaje"
+              name="message"
+              id="message"
+              required
+              oninvalid="this.setCustomValidity('Por favor, ingresa tu mensaje')"
+              oninput="this.setCustomValidity('')"
+            ></textarea>
+            <button
+              type="submit"
+              class="btn btn-primary main-button"
+              id="contact__button"
+            >
+              Envíar
+            </button>
+          </form>
+          <div class="contact__map" id="map"></div>
+        </div>
       </div>
       <a
         href="https://api.whatsapp.com/send/?phone=51970510173&text=Deseo%20agendar%20una%20cita&app_absent=0"
@@ -480,8 +512,8 @@
     ></script>
     <script src="./app.js"></script>
     <script
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAIN4GjuQMoTz-w0WA_mF7hET8-a3Ts3-s&callback=initMap&libraries=&v=weekly"
-    async
-  ></script>
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAIN4GjuQMoTz-w0WA_mF7hET8-a3Ts3-s&callback=initMap&libraries=&v=weekly"
+      async
+    ></script>
   </body>
 </html>
