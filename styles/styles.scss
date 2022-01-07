@@ -249,11 +249,11 @@ body {
   &__item {
     display: flex;
     align-items: center;
+  /*   gap: 16px; */
     border: solid 1px var(--color-bg-aux);
     box-shadow: 0px 8px 15px rgba(184, 184, 184, 0.5);
     min-height: 280px;
     width: 100%;
-    padding: 16px;
     justify-content: center;
   }
   .item__content {
@@ -264,14 +264,18 @@ body {
     font-size: 1.6rem;
     text-align: center;
     width: 100%;
+    padding: 16px;
   }
   .item__multimedia {
     display: none;
     align-items: center;
     justify-content: center;
     width: 50%;
+    height: 100%;
     img {
-      width: 80%;
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
     }
   }
   &__number {
@@ -477,8 +481,8 @@ body {
     textarea {
       font-size: 1.4rem;
       padding: 16px;
-      background-color: var(--color-aux);
-      border: none;
+      /* background-color: var(--color-aux); */
+      border: solid 1px #e8b110;
     }
     input,
     textarea::placeholder {
@@ -773,7 +777,7 @@ hr{
       width: 100%;
       min-width: 280px;
       .item__content {
-        width: 60%;
+        width: 50%;
       }
       .item__multimedia {
         display: flex;
