@@ -122,56 +122,56 @@ const toEng = () => {
   clientsTitleSpan.textContent = language.eng.clients.title.span;
 };
 const toEsp = () => {
-  menu1.forEach((el) => (el.textContent = language.eng.menu[0]));
-  menu2.forEach((el) => (el.textContent = language.eng.menu[1]));
-  menu3.forEach((el) => (el.textContent = language.eng.menu[2]));
-  menu4.forEach((el) => (el.textContent = language.eng.menu[3]));
-  menu5.forEach((el) => (el.textContent = language.eng.menu[4]));
-  carouselText1.textContent = language.eng.carousel[1].text;
-  carouselButton1.textContent = language.eng.carousel[1].button;
-  carouselText2.textContent = language.eng.carousel[2].text;
-  carouselButton2.textContent = language.eng.carousel[2].button;
-  carouselText3.textContent = language.eng.carousel[3].text;
-  carouselButton3.textContent = language.eng.carousel[3].button;
-  abouth1Span.textContent = language.eng.about.h1.span;
-  abouth1.textContent = language.eng.about.h1.text;
-  aboutStrong.textContent = language.eng.about.strong;
-  aboutText2.textContent = language.eng.about.text_2.text;
-  aboutButton.textContent = language.eng.about.button;
+  menu1.forEach((el) => (el.textContent = language.esp.menu[0]));
+  menu2.forEach((el) => (el.textContent = language.esp.menu[1]));
+  menu3.forEach((el) => (el.textContent = language.esp.menu[2]));
+  menu4.forEach((el) => (el.textContent = language.esp.menu[3]));
+  menu5.forEach((el) => (el.textContent = language.esp.menu[4]));
+  carouselText1.textContent = language.esp.carousel[1].text;
+  carouselButton1.textContent = language.esp.carousel[1].button;
+  carouselText2.textContent = language.esp.carousel[2].text;
+  carouselButton2.textContent = language.esp.carousel[2].button;
+  carouselText3.textContent = language.esp.carousel[3].text;
+  carouselButton3.textContent = language.esp.carousel[3].button;
+  abouth1Span.textContent = language.esp.about.h1.span;
+  abouth1.textContent = language.esp.about.h1.text;
+  aboutStrong.textContent = language.esp.about.strong;
+  aboutText2.textContent = language.esp.about.text_2.text;
+  aboutButton.textContent = language.esp.about.button;
   solutionsButton.forEach(
-    (el) => (el.textContent = language.eng.solutions.button),
+    (el) => (el.textContent = language.esp.solutions.button),
   );
-  advisoryTitle.textContent = language.eng.advisory.title;
-  advisorySubitle.textContent = language.eng.advisory.subtitle;
-  advisorySubSubTitle.textContent = language.eng.advisory.subsubtitle;
-  advisoryItemTitle1.textContent = language.eng.advisory.items[1].title;
+  advisoryTitle.textContent = language.esp.advisory.title;
+  advisorySubitle.textContent = language.esp.advisory.subtitle;
+  advisorySubSubTitle.textContent = language.esp.advisory.subsubtitle;
+  advisoryItemTitle1.textContent = language.esp.advisory.items[1].title;
   advisoryItemDescription1.textContent =
-    language.eng.advisory.items[1].description;
-  advisoryItemTitle2.textContent = language.eng.advisory.items[2].title;
+    language.esp.advisory.items[1].description;
+  advisoryItemTitle2.textContent = language.esp.advisory.items[2].title;
   advisoryItemDescription2.textContent =
-    language.eng.advisory.items[2].description;
-  advisoryItemTitle3.textContent = language.eng.advisory.items[3].title;
+    language.esp.advisory.items[2].description;
+  advisoryItemTitle3.textContent = language.esp.advisory.items[3].title;
   advisoryItemDescription3.textContent =
-    language.eng.advisory.items[3].description;
-  advisoryItemTitle4.textContent = language.eng.advisory.items[4].title;
+    language.esp.advisory.items[3].description;
+  advisoryItemTitle4.textContent = language.esp.advisory.items[4].title;
   advisoryItemDescription4.textContent =
-    language.eng.advisory.items[4].description;
-  contactTitle.textContent = language.eng.contact.title;
-  inputName.placeholder = language.eng.contact.form.name.placeholder;
-  inputEmail.placeholder = language.eng.contact.form.email.placeholder;
-  inputPhone.placeholder = language.eng.contact.form.phone.placeholder;
-  inputMessage.placeholder = language.eng.contact.form.message.placeholder;
-  inputButton.textContent = language.eng.contact.button;
-  footerLocation.textContent = language.eng.footer.contactInfo.location;
-  footerPhone.textContent = language.eng.footer.contactInfo.phone;
-  footerEmail.textContent = language.eng.footer.contactInfo.email;
-  footerCopyrigth.textContent = language.eng.footer.copyrigth;
-  solutionsTitleText1.textContent = language.eng.solutions.title_1.text;
-  solutionsTitleSpan1.textContent = language.eng.solutions.title_1.span;
-  solutionsTitleText2.textContent = language.eng.solutions.title_2.text;
-  solutionsTitleSpan2.textContent = language.eng.solutions.title_2.span;
-  clientsTitleText.textContent = language.eng.clients.title.text;
-  clientsTitleSpan.textContent = language.eng.clients.title.span;
+    language.esp.advisory.items[4].description;
+  contactTitle.textContent = language.esp.contact.title;
+  inputName.placeholder = language.esp.contact.form.name.placeholder;
+  inputEmail.placeholder = language.esp.contact.form.email.placeholder;
+  inputPhone.placeholder = language.esp.contact.form.phone.placeholder;
+  inputMessage.placeholder = language.esp.contact.form.message.placeholder;
+  inputButton.textContent = language.esp.contact.button;
+  footerLocation.textContent = language.esp.footer.contactInfo.location;
+  footerPhone.textContent = language.esp.footer.contactInfo.phone;
+  footerEmail.textContent = language.esp.footer.contactInfo.email;
+  footerCopyrigth.textContent = language.esp.footer.copyrigth;
+  solutionsTitleText1.textContent = language.esp.solutions.title_1.text;
+  solutionsTitleSpan1.textContent = language.esp.solutions.title_1.span;
+  solutionsTitleText2.textContent = language.esp.solutions.title_2.text;
+  solutionsTitleSpan2.textContent = language.esp.solutions.title_2.span;
+  clientsTitleText.textContent = language.esp.clients.title.text;
+  clientsTitleSpan.textContent = language.esp.clients.title.span;
 };
 
 const language = {
