@@ -146,7 +146,11 @@ body {
   img {
     height: calc(100vh - 72px);
     object-fit: cover;
+    object-position: top;
     position: relative;
+  }
+  .first_img{
+    object-position: bottom;
   }
   &__content {
     align-items: center;

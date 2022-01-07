@@ -205,7 +205,14 @@ body {
   height: calc(100vh - 72px);
   -o-object-fit: cover;
      object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
   position: relative;
+}
+
+.carrousel .first_img {
+  -o-object-position: bottom;
+     object-position: bottom;
 }
 
 .carrousel__content {
