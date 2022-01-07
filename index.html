@@ -36,8 +36,8 @@
   <body>
     <div class="language-bar">
       <div class="language-bar__flags">
-        <span class="language-bar__eng"></span>
-        <span class="language-bar__esp"></span>
+        <span class="language-bar__eng" onclick="toEng()"></span>
+        <span class="language-bar__esp" onclick="toEsp()"></span>
       </div>
     </div>
     <header class="header">
@@ -45,24 +45,54 @@
       <a href="#" class="header__logo"></a>
       <div class="header__menu-mobile">
         <ul class="drop-list">
-          <li><a href="#carrousel" class="drop-list__item">Inicio</a></li>
-          <li><a href="#about" class="drop-list__item">Conócenos</a></li>
-          <li><a href="#solutions" class="drop-list__item">Soluciones</a></li>
-          <li><a href="#advisory" class="drop-list__item">Asesorias</a></li>
-          <li><a href="#contacto" class="drop-list__item">Contáctanos</a></li>
+          <li>
+            <a href="#carrousel" class="drop-list__item lang__menu-1">Inicio</a>
+          </li>
+          <li>
+            <a href="#about" class="drop-list__item lang__menu-2">Conócenos</a>
+          </li>
+          <li>
+            <a href="#solutions" class="drop-list__item lang__menu-3"
+              >Soluciones</a
+            >
+          </li>
+          <li>
+            <a href="#advisory" class="drop-list__item lang__menu-4"
+              >Asesorias</a
+            >
+          </li>
+          <li>
+            <a href="#contacto" class="drop-list__item lang__menu-5"
+              >Contáctanos</a
+            >
+          </li>
         </ul>
         <div class="language-bar__flags">
-          <span class="language-bar__eng"></span>
-          <span class="language-bar__esp"></span>
+          <span class="language-bar__eng" onclick="toEng()"></span>
+          <span class="language-bar__esp" onclick="toEsp()"></span>
         </div>
       </div>
       <div class="header__menu-desktop">
         <ul class="nav-bar">
-          <li><a href="#carrousel" class="nav-bar__item">Inicio</a></li>
-          <li><a href="#about" class="nav-bar__item">Conócenos</a></li>
-          <li><a href="#solutions" class="nav-bar__item">Soluciones</a></li>
-          <li><a href="#advisory" class="nav-bar__item">Asesorias</a></li>
-          <li><a href="#contacto" class="nav-bar__item">Contáctanos</a></li>
+          <li>
+            <a href="#carrousel" class="nav-bar__item lang__menu-1">Inicio</a>
+          </li>
+          <li>
+            <a href="#about" class="nav-bar__item lang__menu-2">Conócenos</a>
+          </li>
+          <li>
+            <a href="#solutions" class="nav-bar__item lang__menu-3"
+              >Soluciones</a
+            >
+          </li>
+          <li>
+            <a href="#advisory" class="nav-bar__item lang__menu-4">Asesorias</a>
+          </li>
+          <li>
+            <a href="#contacto" class="nav-bar__item lang__menu-5"
+              >Contáctanos</a
+            >
+          </li>
         </ul>
       </div>
     </header>
@@ -92,12 +122,14 @@
               />
               <div class="carrousel__content">
                 <i class="fas fa-users-cog fa-5x"></i>
-                <p class="carrousel__text">
+                <p class="carrousel__text lang__carousel-text-1">
                   Creamos hardware y aplicaciones web para monitorear tus
                   procesos en tiempo real.
                 </p>
                 <a href="#about" class="button__href">
-                  <button class="btn btn-outline-primary main-button-outline">
+                  <button
+                    class="btn btn-outline-primary main-button-outline lang__carousel-button-1"
+                  >
                     Conócenos
                   </button></a
                 >
@@ -111,12 +143,14 @@
               />
               <div class="carrousel__content">
                 <i class="fas fa-rocket fa-5x"></i>
-                <p class="carrousel__text">
+                <p class="carrousel__text lang__carousel-text-2">
                   Usamos algoritmos IA para identificación, conteo y control de
                   patrones.
                 </p>
                 <a href="#solutions" class="button__href">
-                  <button class="btn btn-outline-primary main-button-outline">
+                  <button
+                    class="btn btn-outline-primary main-button-outline lang__carousel-button-2"
+                  >
                     Ver soluciones
                   </button>
                 </a>
@@ -130,11 +164,13 @@
               />
               <div class="carrousel__content">
                 <i class="fas fa-comments fa-5x"></i>
-                <p class="carrousel__text">
+                <p class="carrousel__text lang__carousel-text-3">
                   Te escuchamos para hacer realidad tu proyecto tecnológico.
                 </p>
                 <a href="#advisory" class="button__href">
-                  <button class="btn btn-outline-primary main-button-outline">
+                  <button
+                    class="btn btn-outline-primary main-button-outline lang__carousel-button-3"
+                  >
                     Asesorias
                   </button>
                 </a>
@@ -163,16 +199,18 @@
       </div>
       <div class="about" id="about">
         <div class="about__content">
-          <h1 class="about__text-h1"><span>Ingeniería</span> pensada en ti</h1>
-          <h2 class="about__text">
+          <strong class="about__text-h1 about__text-h1-strong lang__about-span"
+            >Ingeniería</strong
+          >
+          <h1 class="about__text-h1 lang__about-h1">pensada en ti</h1>
+          <h2 class="about__text about__text-strong lang__about-strong">
             <strong
               >Somos una empresa liberteña especializada en brindar soluciones
               integrales de precisión para distintos sectores
               industriales.</strong
             >
           </h2>
-
-          <h2 class="about__text">
+          <h2 class="about__text lang__about-text-2">
             Creamos el software y hardware idóneo para la adquisición,
             interpretación y muestreo de la información, analizándola con
             sofisticados algoritmos de inteligencia artificial,
@@ -181,7 +219,9 @@
             >
           </h2>
           <a href="#contacto" class="button__href"
-            ><button class="btn btn-primary main-button">Contáctanos</button></a
+            ><button class="btn btn-primary main-button lang__about-button">
+              Contáctanos
+            </button></a
           >
         </div>
         <img
@@ -193,7 +233,11 @@
       <hr />
       <hr />
       <div class="clients">
-        <p class="clients__title">Nuestros <span>Clientes</span></p>
+        <div class="clients__title-container">
+          <p class="clients__title lang__clients-title-text">Nuestros</p>
+          <p class="clients__title clients__title-space">&nbsp;&nbsp;&nbsp;</p>
+          <span class="clients__title clients__title-strong lang__clients-title-span">Clientes</span>
+        </div>
         <div class="clients__carousel">
           <div class="logo-slider">
             <div class="logo-slide-track">
@@ -261,7 +305,10 @@
       <hr />
       <div class="solutions" id="solutions">
         <div class="solutions__services">
-          <p class="solutions__title"><span>Soluciones</span> como Servicio:</p>
+          <div class="solutions__services-title">
+            <span class="solutions__title solutions__title-strong lang__solutions-title1-span">Soluciones</span>
+            <p class="solutions__title lang__solutions-title1-text">como Servicio:</p>
+          </div>
           <div class="solutions__grid">
             <div class="solutions__item">
               <img
@@ -269,7 +316,11 @@
                 alt="Logo OctoScan"
                 class="solutions__img"
               />
-              <button class="btn btn-primary main-button">Ver solución</button>
+              <button
+                class="btn btn-primary main-button lang__solutions-button"
+              >
+                Ver solución
+              </button>
             </div>
             <div class="solutions__item">
               <img
@@ -277,7 +328,11 @@
                 alt="Logo Twarm"
                 class="solutions__img"
               />
-              <button class="btn btn-primary main-button">Ver solución</button>
+              <button
+                class="btn btn-primary main-button lang__solutions-button"
+              >
+                Ver solución
+              </button>
             </div>
             <div class="solutions__item">
               <img
@@ -285,7 +340,11 @@
                 alt="Logo Dynasense"
                 class="solutions__img"
               />
-              <button class="btn btn-primary main-button">Ver solución</button>
+              <button
+                class="btn btn-primary main-button lang__solutions-button"
+              >
+                Ver solución
+              </button>
             </div>
             <div class="solutions__item">
               <img
@@ -298,7 +357,9 @@
                 target="_blank"
                 class="button__href"
               >
-                <button class="btn btn-primary main-button">
+                <button
+                  class="btn btn-primary main-button lang__solutions-button"
+                >
                   Ver solución
                 </button></a
               >
@@ -309,7 +370,11 @@
                 alt="Logo Tiago"
                 class="solutions__img"
               />
-              <button class="btn btn-primary main-button">Ver solución</button>
+              <button
+                class="btn btn-primary main-button lang__solutions-button"
+              >
+                Ver solución
+              </button>
             </div>
             <div class="solutions__item">
               <img
@@ -317,13 +382,20 @@
                 alt="Logo CheckOut"
                 class="solutions__img"
               />
-              <button class="btn btn-primary main-button">Ver solución</button>
+              <button
+                class="btn btn-primary main-button lang__solutions-button"
+              >
+                Ver solución
+              </button>
             </div>
           </div>
         </div>
         <div class="solutions__services">
           <hr />
-          <p class="solutions__title"><span>Público</span> en general</p>
+          <div class="solutions__services-title">
+            <span class="solutions__title solutions__title-strong lang__solutions-title2-text">Público</span>
+            <p class="solutions__title lang__solutions-title2-span">en general</p>
+          </div>
           <div class="solutions__grid solutions__grid-2">
             <div class="solutions__item">
               <img
@@ -336,7 +408,9 @@
                 target="_blank"
                 class="button__href"
               >
-                <button class="btn btn-primary main-button">
+                <button
+                  class="btn btn-primary main-button lang__solutions-button"
+                >
                   Ver solución
                 </button></a
               >
@@ -352,7 +426,9 @@
                 target="_blank"
                 class="button__href"
               >
-                <button class="btn btn-primary main-button">
+                <button
+                  class="btn btn-primary main-button lang__solutions-button"
+                >
                   Ver solución
                 </button></a
               >
@@ -360,17 +436,17 @@
           </div>
         </div>
       </div>
-      <hr/>
+      <hr />
       <div class="how" id="advisory">
-        <p class="how__h2">Asesorias</p>
-        <p class="how__subtitle">
+        <p class="how__h2 lang__advisory-title">Asesorias</p>
+        <p class="how__subtitle lang__advisory-subtitle">
           Si tienes un proyecto académico o empresarial de cualquier rubro y
           deseas un complemento tecnológico, somos tus mejores aliados para
           hacerlo realidad. Te entendemos para llevar tu idea a otro nivel con
           apoyo de la tecnología, desarrollando el hardware y software
           necesario.
         </p>
-        <p class="how__title">¿Cómo lo hacemos?</p>
+        <p class="how__title lang__advisory-subsubtitle">¿Cómo lo hacemos?</p>
         <div class="how__grid">
           <div class="how__item">
             <div class="item__multimedia">
@@ -378,8 +454,12 @@
             </div>
             <div class="item__content">
               <span class="how__number">01</span>
-              <p class="how__item-title">Escuchamos tu problema</p>
-              <p class="how__item-description">
+              <p class="how__item-title lang__advisory-item-title-1">
+                Escuchamos tu problema
+              </p>
+              <p
+                class="how__item-description lang__advisory-item-description-1"
+              >
                 Agendamos una reunión para entender a profundidad la situación.
               </p>
             </div>
@@ -390,8 +470,12 @@
             </div>
             <div class="item__content">
               <span class="how__number">02</span>
-              <p class="how__item-title">Aterrizamos tu solución</p>
-              <p class="how__item-description">
+              <p class="how__item-title lang__advisory-item-title-2">
+                Aterrizamos tu solución
+              </p>
+              <p
+                class="how__item-description lang__advisory-item-description-2"
+              >
                 Te damos una propuesta técnica con un plan de trabajo y recursos
                 necesarios.
               </p>
@@ -403,8 +487,12 @@
             </div>
             <div class="item__content">
               <span class="how__number">03</span>
-              <p class="how__item-title">Lanzamos un piloto</p>
-              <p class="how__item-description">
+              <p class="how__item-title lang__advisory-item-title-3">
+                Lanzamos un piloto
+              </p>
+              <p
+                class="how__item-description lang__advisory-item-description-3"
+              >
                 Ponemos en marcha el primer prototipo en un entorno real,
                 brindando las mejoras necesarias
               </p>
@@ -416,8 +504,12 @@
             </div>
             <div class="item__content">
               <span class="how__number">04</span>
-              <p class="how__item-title">Validamos el producto</p>
-              <p class="how__item-description">
+              <p class="how__item-title lang__advisory-item-title-4">
+                Validamos el producto
+              </p>
+              <p
+                class="how__item-description lang__advisory-item-description-4"
+              >
                 Probamos su óptimo desempeño, cerrando con la documentación
                 necesaria y lanzarlo al mercado (De ser el caso).
               </p>
@@ -427,7 +519,7 @@
       </div>
       <hr />
       <div class="contact" id="contacto">
-        <p class="contact__title">Contáctanos</p>
+        <p class="contact__title lang__contact-title">Contáctanos</p>
         <div class="contact__container">
           <form action="" class="contact__form" id="myForm">
             <input
@@ -438,6 +530,7 @@
               required
               oninvalid="this.setCustomValidity('Por favor, ingresa un nombre válido')"
               oninput="this.setCustomValidity('')"
+              class="lang__contact-input-name"
             />
             <input
               type="email"
@@ -447,6 +540,7 @@
               required
               oninvalid="this.setCustomValidity('Por favor, ingresa un correo electrónico válido')"
               oninput="this.setCustomValidity('')"
+              class="lang__contact-input-email"
             />
             <input
               type="tel"
@@ -457,6 +551,7 @@
               pattern="[9]{1}[0-9]{8}"
               oninvalid="this.setCustomValidity('Por favor, ingresa un número de teléfono válido')"
               oninput="this.setCustomValidity('')"
+              class="lang__contact-input-phone"
             />
             <textarea
               type="text"
@@ -466,10 +561,11 @@
               required
               oninvalid="this.setCustomValidity('Por favor, ingresa tu mensaje')"
               oninput="this.setCustomValidity('')"
+              class="lang__contact-input-message"
             ></textarea>
             <button
               type="submit"
-              class="btn btn-primary main-button"
+              class="btn btn-primary main-button lang__contact-button"
               id="contact__button"
             >
               Envíar
@@ -490,7 +586,9 @@
         <div class="contact__item">
           <img src="./assets/footer/hogar.png" alt="Icono de ubicación" />
           <div class="contact__item-info">
-            <p class="contact__item-title">Oficina Trujillo</p>
+            <p class="contact__item-title lang__footer-location">
+              Oficina Trujillo
+            </p>
             <p class="contact__item-description">
               Miroquezada D5 Urb. Nueva Marqueza
             </p>
@@ -499,14 +597,16 @@
         <div class="contact__item">
           <img src="./assets/footer/telefono.png" alt="Icono de telefono" />
           <div class="contact__item-info">
-            <p class="contact__item-title">Teléfono</p>
+            <p class="contact__item-title lang__footer-phone">Teléfono</p>
             <p class="contact__item-description">+51 970 510 173</p>
           </div>
         </div>
         <div class="contact__item">
           <img src="./assets/footer/email.png" alt="Icono de email" />
           <div class="contact__item-info">
-            <p class="contact__item-title">Correo Electrónico</p>
+            <p class="contact__item-title lang__footer-email">
+              Correo Electrónico
+            </p>
             <p class="contact__item-description">agil@coralldr.com</p>
           </div>
         </div>
@@ -518,7 +618,9 @@
         </div>
       </div>
       <div class="footer__main">
-        <p>Diseñado por CorAll D&R | Copyrigth 2022</p>
+        <p class="lang__footer-copyrigth">
+          Diseñado por CorAll D&R | Copyrigth 2022
+        </p>
       </div>
     </footer>
     <script
@@ -537,8 +639,9 @@
       crossorigin="anonymous"
     ></script>
     <script src="./app.js"></script>
+    <script src="./languaje.js"></script>
     <script
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAIN4GjuQMoTz-w0WA_mF7hET8-a3Ts3-s&callback=initMap&libraries=&v=weekly"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBp-4oGzIBhhAkd5YEdLLuEPjBqr-cwIWA&callback=initMap&libraries=&v=weekly"
       async
     ></script>
   </body>

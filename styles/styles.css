@@ -262,6 +262,10 @@ body {
   text-align: left;
 }
 
+.about .about__text-strong {
+  font-weight: 700;
+}
+
 .about__text-h1 {
   color: var(--color-main);
   font-size: 4rem;
@@ -269,7 +273,7 @@ body {
   margin-bottom: 16px;
 }
 
-.about__text-h1 span {
+.about__text-h1-strong {
   font-weight: 800;
 }
 
@@ -408,6 +412,7 @@ body {
 }
 
 .how__item-description {
+  text-align: justify;
   color: black;
 }
 
@@ -428,15 +433,32 @@ body {
   width: 100%;
 }
 
+.clients .clients__title-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 16px;
+}
+
+.clients .clients__title-space {
+  display: none;
+}
+
 .clients__title {
   color: var(--color-main);
   font-size: 4rem;
   font-weight: 500;
-  margin-bottom: 16px;
   text-align: center;
 }
 
-.clients__title span {
+.clients .clients__title-strong {
   font-weight: 800;
 }
 
@@ -537,16 +559,29 @@ body {
   width: 100%;
 }
 
+.solutions .solutions__services-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 16px;
+}
+
 .solutions__title {
   color: var(--color-main);
   font-size: 4rem;
   font-weight: 500;
-  margin: 20px 0;
-  margin-bottom: 16px;
   text-align: center;
+  margin-bottom: 0;
 }
 
-.solutions__title span {
+.solutions .solutions__title-strong {
   font-weight: 800;
 }
 
@@ -676,7 +711,6 @@ body {
   /* The height is 400 pixels */
   width: 100%;
   /* The width is the width of the web page */
-  border: solid 1px black;
   margin: 16px 0;
 }
 
@@ -898,6 +932,20 @@ body {
   text-align: center;
 }
 
+.language-bar__eng, .language-bar__esp {
+  cursor: pointer;
+}
+
+@media (min-width: 530px) {
+  .clients .clients__title-container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 8px;
+  }
+}
+
 @media (min-width: 600px) {
   .button__href {
     text-align: left;
@@ -1075,6 +1123,13 @@ body {
     -ms-grid-column: 2;
     grid-column: 2;
   }
+  .solutions .solutions__services-title {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 8px;
+  }
   .contact {
     padding: 8px 82px;
   }
@@ -1094,7 +1149,6 @@ body {
   .contact #map {
     height: 413px;
     width: 413px;
-    border: solid 1px black;
     margin: 16px 0;
   }
   .footer__social {
