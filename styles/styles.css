@@ -936,6 +936,10 @@ body {
   cursor: pointer;
 }
 
+hr {
+  margin: 16px 0;
+}
+
 @media (min-width: 530px) {
   .clients .clients__title-container {
     -webkit-box-orient: horizontal;
@@ -1026,7 +1030,7 @@ body {
 
 @media (min-width: 768px) {
   hr {
-    margin: 0 82px;
+    margin: 16px 82px;
   }
   .header {
     padding: 8px 22px;
