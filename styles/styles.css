@@ -769,6 +769,10 @@ body {
   width: 100%;
 }
 
+.footer__contact .contact__item img {
+  width: 68px;
+}
+
 .footer__contact .contact__item-title {
   /*  color: var(--color-main); */
   font-weight: 700;
