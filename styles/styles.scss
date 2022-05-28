@@ -19,6 +19,14 @@ html {
 body {
   font-family: var(--font-family);
 }
+@mixin white-gradient {
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+$animationSpeed: 40s;
 .language-bar {
   display: none;
   padding-right: 24px;
@@ -149,7 +157,7 @@ body {
     object-position: top;
     position: relative;
   }
-  .first_img{
+  .first_img {
     object-position: bottom;
   }
   &__content {
@@ -249,7 +257,7 @@ body {
   &__item {
     display: flex;
     align-items: center;
-  /*   gap: 16px; */
+    /*   gap: 16px; */
     border: solid 1px var(--color-bg-aux);
     box-shadow: 0px 8px 15px rgba(184, 184, 184, 0.5);
     min-height: 280px;
@@ -333,7 +341,7 @@ body {
       margin: auto;
       overflow: hidden;
       position: relative;
-      width: 100%;
+      width: 80%;
     }
 
     .logo-slider::before,
@@ -407,6 +415,7 @@ body {
   min-height: 20vh;
   padding: 0 16px;
   width: 100%;
+  min-height: 80vh;
   .solutions__services-title {
     display: flex;
     flex-direction: column;
@@ -523,7 +532,7 @@ body {
       grid-template-columns: 1fr;
       text-align: center;
       width: 100%;
-      img{
+      img {
         width: 68px;
       }
       &-title {
@@ -574,6 +583,7 @@ body {
 
   100% {
     -webkit-transform: translateX(calc(-250px * 7));
+    transform: translateX(calc(-250px * 7));
   }
 }
 .showRight {
@@ -651,10 +661,11 @@ body {
   width: 100%;
   text-align: center;
 }
-.language-bar__eng, .language-bar__esp{
+.language-bar__eng,
+.language-bar__esp {
   cursor: pointer;
 }
-hr{
+hr {
   margin: 16px 0;
 }
 @media (min-width: 530px) {
@@ -789,6 +800,7 @@ hr{
   }
   .solutions {
     padding: 8px 82px;
+    padding-bottom: 56px;
     grid-gap: 16px;
     &__grid {
       grid-template-columns: 1fr 1fr;
@@ -908,5 +920,21 @@ hr{
   }
   .contact {
     padding: 8px 82px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .about {
+    min-height: 70vh;
+  }
+  .contact {
+    &__form {
+      width: 45%;
+    }
+    #map {
+      height: 413px;
+      width: 45%;
+      margin: 16px 0;
+    }
   }
 }
