@@ -14,6 +14,32 @@ const abouth1Span = document.querySelector('.lang__about-span');
 const aboutStrong = document.querySelector('.lang__about-strong');
 const aboutText2 = document.querySelector('.lang__about-text-2');
 const aboutButton = document.querySelector('.lang__about-button');
+const whyUsTitle = document.querySelector('.lang__why-us-title-span');
+const whyUsCard1Title = document.querySelector('.lang__why-us-card1-title');
+const whyUsCard1Description = document.querySelector(
+  '.lang__why-us-card1-description',
+);
+const whyUsCard2Title = document.querySelector('.lang__why-us-card2-title');
+const whyUsCard2Description = document.querySelector(
+  '.lang__why-us-card2-description',
+);
+const whyUsCard3Title = document.querySelector('.lang__why-us-card3-title');
+const whyUsCard3Description = document.querySelector(
+  '.lang__why-us-card3-description',
+);
+const whyUsCard4Title = document.querySelector('.lang__why-us-card4-title');
+const whyUsCard4Description = document.querySelector(
+  '.lang__why-us-card4-description',
+);
+const whyUsCard5Title = document.querySelector('.lang__why-us-card5-title');
+const whyUsCard5Description = document.querySelector(
+  '.lang__why-us-card5-description',
+);
+const whyUsCard6Title = document.querySelector('.lang__why-us-card6-title');
+const whyUsCard6Description = document.querySelector(
+  '.lang__why-us-card6-description',
+);
+
 const solutionsButton = document.querySelectorAll('.lang__solutions-button');
 const advisoryTitle = document.querySelector('.lang__advisory-title');
 const advisorySubitle = document.querySelector('.lang__advisory-subtitle');
@@ -54,20 +80,12 @@ const footerLocation = document.querySelector('.lang__footer-location');
 const footerPhone = document.querySelector('.lang__footer-phone');
 const footerEmail = document.querySelector('.lang__footer-email');
 const footerCopyrigth = document.querySelector('.lang__footer-copyrigth');
-const solutionsTitleText1 = document.querySelector(
-  '.lang__solutions-title1-text',
-);
 const solutionsTitleSpan1 = document.querySelector(
   '.lang__solutions-title1-span',
 );
-const solutionsTitleText2 = document.querySelector(
-  '.lang__solutions-title2-text',
-);
-const solutionsTitleSpan2 = document.querySelector(
-  '.lang__solutions-title2-span',
-);
-const clientsTitleText = document.querySelector('.lang__clients-title-text');
 const clientsTitleSpan = document.querySelector('.lang__clients-title-span');
+//nuevo
+const clientsSubtitle = document.querySelector('.lang__clients-subtitle');
 
 const toEng = () => {
   menu1.forEach((el) => (el.textContent = language.eng.menu[0]));
@@ -86,6 +104,19 @@ const toEng = () => {
   aboutStrong.textContent = language.eng.about.strong;
   aboutText2.textContent = language.eng.about.text_2.text;
   aboutButton.textContent = language.eng.about.button;
+  whyUsTitle.textContent = language.eng.whyUs.title;
+  whyUsCard1Title.textContent = language.eng.whyUs.cards[1].title;
+  whyUsCard1Description.textContent = language.eng.whyUs.cards[1].description;
+  whyUsCard2Description.textContent = language.eng.whyUs.cards[2].description;
+  whyUsCard2Title.textContent = language.eng.whyUs.cards[2].title;
+  whyUsCard3Description.textContent = language.eng.whyUs.cards[3].description;
+  whyUsCard3Title.textContent = language.eng.whyUs.cards[3].title;
+  whyUsCard4Description.textContent = language.eng.whyUs.cards[4].description;
+  whyUsCard4Title.textContent = language.eng.whyUs.cards[4].title;
+  whyUsCard5Description.textContent = language.eng.whyUs.cards[5].description;
+  whyUsCard5Title.textContent = language.eng.whyUs.cards[5].title;
+  whyUsCard6Description.textContent = language.eng.whyUs.cards[6].description;
+  whyUsCard6Title.textContent = language.eng.whyUs.cards[6].title;
   solutionsButton.forEach(
     (el) => (el.textContent = language.eng.solutions.button),
   );
@@ -114,12 +145,9 @@ const toEng = () => {
   footerPhone.textContent = language.eng.footer.contactInfo.phone;
   footerEmail.textContent = language.eng.footer.contactInfo.email;
   footerCopyrigth.textContent = language.eng.footer.copyrigth;
-  solutionsTitleText1.textContent = language.eng.solutions.title_1.text;
   solutionsTitleSpan1.textContent = language.eng.solutions.title_1.span;
-  solutionsTitleText2.textContent = language.eng.solutions.title_2.text;
-  solutionsTitleSpan2.textContent = language.eng.solutions.title_2.span;
-  clientsTitleText.textContent = language.eng.clients.title.text;
   clientsTitleSpan.textContent = language.eng.clients.title.span;
+  clientsSubtitle.textContent = language.eng.clients.p;
 };
 const toEsp = () => {
   menu1.forEach((el) => (el.textContent = language.esp.menu[0]));
@@ -138,6 +166,19 @@ const toEsp = () => {
   aboutStrong.textContent = language.esp.about.strong;
   aboutText2.textContent = language.esp.about.text_2.text;
   aboutButton.textContent = language.esp.about.button;
+  whyUsTitle.textContent = language.esp.whyUs.title;
+  whyUsCard1Title.textContent = language.esp.whyUs.cards[1].title;
+  whyUsCard1Description.textContent = language.esp.whyUs.cards[1].description;
+  whyUsCard2Description.textContent = language.esp.whyUs.cards[2].description;
+  whyUsCard2Title.textContent = language.esp.whyUs.cards[2].title;
+  whyUsCard3Description.textContent = language.esp.whyUs.cards[3].description;
+  whyUsCard3Title.textContent = language.esp.whyUs.cards[3].title;
+  whyUsCard4Description.textContent = language.esp.whyUs.cards[4].description;
+  whyUsCard4Title.textContent = language.esp.whyUs.cards[4].title;
+  whyUsCard5Description.textContent = language.esp.whyUs.cards[5].description;
+  whyUsCard5Title.textContent = language.esp.whyUs.cards[5].title;
+  whyUsCard6Description.textContent = language.esp.whyUs.cards[6].description;
+  whyUsCard6Title.textContent = language.esp.whyUs.cards[6].title;
   solutionsButton.forEach(
     (el) => (el.textContent = language.esp.solutions.button),
   );
@@ -166,12 +207,9 @@ const toEsp = () => {
   footerPhone.textContent = language.esp.footer.contactInfo.phone;
   footerEmail.textContent = language.esp.footer.contactInfo.email;
   footerCopyrigth.textContent = language.esp.footer.copyrigth;
-  solutionsTitleText1.textContent = language.esp.solutions.title_1.text;
   solutionsTitleSpan1.textContent = language.esp.solutions.title_1.span;
-  solutionsTitleText2.textContent = language.esp.solutions.title_2.text;
-  solutionsTitleSpan2.textContent = language.esp.solutions.title_2.span;
-  clientsTitleText.textContent = language.esp.clients.title.text;
   clientsTitleSpan.textContent = language.esp.clients.title.span;
+  clientsSubtitle.textContent = language.esp.clients.p;
 };
 
 const language = {
@@ -179,11 +217,11 @@ const language = {
     menu: ['Inicio', 'Conócenos', 'Soluciones', 'Asesorias', 'Contáctanos'],
     carousel: {
       1: {
-        text: 'Creamos hardware y aplicaciones web para monitorear tus procesos en tiempo real.',
+        text: 'Evolución Digital  -  Diseñamos y fabricamos sensores inalámbricos a larga distancia.',
         button: 'Conócenos',
       },
       2: {
-        text: 'Usamos algoritmos IA para identificación, conteo y control de patrones.',
+        text: '"Medir para mejorar". Monitorea tus procesos en tiempo real con nuestras plataformas.',
         button: 'Ver soluciones',
       },
       3: {
@@ -194,15 +232,52 @@ const language = {
     about: {
       h1: { span: 'Ingeniería', text: ' pensada en ti' },
       strong:
-        'Somos una empresa liberteña especializada en brindar soluciones integrales de precisión para distintos sectores industriales.',
+        'Somos una empresa trujillana especializada en brindar soluciones tecnológicas integrales de precisión para el sector agroindustrial y agropecuario.',
       text_2: {
-        text: 'Creamos el software y hardware idóneo para la adquisición, interpretación y muestreo de la información, analizándola con sofisticados algoritmos de inteligencia artificial,',
-        strong: 'brindando predicciones para una mejor toma de decisiones.',
+        text: 'Creamos los sensores idóneos para la adquisición de información para que sea interpretada y muestreada en una plataforma web, analizándola con sofisticados algoritmos de inteligencia artificial,',
+        strong:
+          'brindando alertas y predicciones para una mejor toma de decisiones.',
       },
       button: 'Contáctanos',
     },
+    whyUs: {
+      title: '¿Por qué nosotros?',
+      cards: {
+        1: {
+          title: 'Precisión',
+          description:
+            'Para mejorar hay que medir, por eso integramos los sensores más precisos para analizar el fenómeno deseado.',
+        },
+        2: {
+          title: 'Conectividad',
+          description:
+            'Encontramos el medio de comunicación más óptimo hacia nuestros servidores para tener la información en tiempo real.',
+        },
+        3: {
+          title: 'Low Energy',
+          description:
+            'Optimizamos nuestros circuitos para que demanden la menor energía. Pueden funcionar de forma totalmente autónoma.',
+        },
+        4: {
+          title: 'Local',
+          description:
+            'Somos los desarrolladores de la tecnología y ofrecemos soporte local a nuestros clientes de forma ágil y efectiva a un precio justo.',
+        },
+        5: {
+          title: 'Híbrido',
+          description:
+            'En caso exista un desarrollo de parte nuestro cliente, nuestras plataformas y sensores pueden adaptarse a ello para tener toda la información en un solo lugar.',
+        },
+        6: {
+          title: 'Alertas',
+          description:
+            'Nuestras plataformas se retroalimentan de la información sensorial para evaluarla y enviarte una alerta a tu celular o correo de forma oportuna.',
+        },
+      },
+    },
     clients: {
       title: { text: 'Nuestros', span: ' Clientes' },
+      p: 'Estamos muy orgullosos con quién trabajamos',
     },
     solutions: {
       title_1: { span: 'Soluciones', text: ' como Servicio:' },
@@ -272,11 +347,11 @@ const language = {
     menu: ['Home', 'About', 'Solutions', 'Advisory', 'Contact'],
     carousel: {
       1: {
-        text: 'We create hardware and web applications to monitor your processes in real time.',
+        text: 'Digital Evolution - We design and manufacture long-distance wireless sensors.',
         button: 'About us',
       },
       2: {
-        text: 'We use AI algorithms for pattern identification, counting and control.',
+        text: '"Measure to improve". Monitor your processes in real time with our platforms.',
         button: 'Solutions',
       },
       3: {
@@ -294,8 +369,44 @@ const language = {
       },
       button: 'Contact us',
     },
+    whyUs: {
+      title: 'Why us?',
+      cards: {
+        1: {
+          title: 'Precision',
+          description:
+            "To improve you have to measure, that's why we integrate the most precise sensors to analyze the desired phenomenon.",
+        },
+        2: {
+          title: 'Connectivity',
+          description:
+            'We find the most optimal means of communication with our servers to have information in real time.',
+        },
+        3: {
+          title: 'Low Energy cost',
+          description:
+            'We optimize our circuits so that they demand the least amount of energy. They can work completely autonomously.',
+        },
+        4: {
+          title: 'Local',
+          description:
+            'We are the developers of the technology and we offer local support to our clients in an agile and effective way at a fair price.',
+        },
+        5: {
+          title: 'Hybrid',
+          description:
+            'In case there is a development of our client, our platforms and sensors can be adapted to it to have all the information in one place.',
+        },
+        6: {
+          title: 'Alerts',
+          description:
+            'Our platforms take feedback from sensory information to evaluate and send you an alert to your cell phone or email in a timely manner.',
+        },
+      },
+    },
     clients: {
       title: { text: 'Our', span: 'Clients' },
+      p: 'We are very proud of who we work with',
     },
     solutions: {
       title_1: { span: 'Solutions', text: ' as a Service:' },

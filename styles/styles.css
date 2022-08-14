@@ -297,6 +297,86 @@ body {
   width: 100%;
 }
 
+.why-us {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 42px;
+  min-height: 60vh;
+  padding: 8px 16px;
+  width: 100%;
+}
+
+.why-us__grid {
+  margin-top: 16px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 32px;
+}
+
+.why-us__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 520px;
+}
+
+.why-us__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.why-us__icon {
+  max-width: 288px;
+  height: 120px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin-bottom: 16px;
+}
+
+.why-us__title {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.why-us__description {
+  text-align: center;
+  font-size: 1.6rem;
+}
+
 .how {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -416,6 +496,15 @@ body {
   margin-bottom: 16px;
   padding: 4px;
   width: 55px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .how__item-title {
@@ -548,10 +637,12 @@ body {
 }
 
 .clients__carousel .logo-slider .slide img {
-  height: 170px;
+  height: 120px;
   max-width: 180px;
   -o-object-fit: contain;
      object-fit: contain;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
 }
 
 .solutions {
@@ -569,7 +660,7 @@ body {
   min-height: 20vh;
   padding: 0 16px;
   width: 100%;
-  min-height: 80vh;
+  min-height: 30vh;
 }
 
 .solutions .solutions__services-title {
@@ -897,21 +988,29 @@ body {
 }
 
 .main-button-outline {
-  border-color: var(--color-bg);
-  color: var(--color-bg);
-  font-size: 2rem;
-  height: 50px;
-  width: 80%;
-}
-
-.main-button-outline:hover {
   background-color: var(--color-main);
   border-color: var(--color-main);
+  border-radius: 25px;
   -webkit-box-shadow: 0px 8px 15px rgba(163, 21, 35, 0.3);
           box-shadow: 0px 8px 15px rgba(163, 21, 35, 0.3);
   color: var(--color-bg);
+  font-size: 2rem;
+  font-weight: bold;
+  height: 50px;
+  padding: 0 36px;
+}
+
+.main-button-outline:hover {
+  border-radius: 25px;
+  border: solid 3px white;
+  background-color: transparent;
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  height: 50px;
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
+  padding: 0 36px;
 }
 
 .main-button-outline:not(:disabled):not(.disabled):active {
@@ -1188,6 +1287,10 @@ hr {
             justify-content: space-between;
     padding: 8px 82px;
   }
+  .why-us__grid {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
   .carrousel__content {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1256,8 +1359,9 @@ hr {
     padding: 72px 82px;
   }
   .solutions__grid {
-    -ms-grid-columns: 1fr 1fr 1fr;
-        grid-template-columns: 1fr 1fr 1fr;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    padding: 0px 260px;
   }
   .solutions__grid-2 {
     -ms-grid-columns: 1fr 1fr;
@@ -1279,6 +1383,10 @@ hr {
 @media (min-width: 1400px) {
   .about {
     min-height: 70vh;
+  }
+  .why-us__grid {
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
   }
   .contact__form {
     width: 45%;
